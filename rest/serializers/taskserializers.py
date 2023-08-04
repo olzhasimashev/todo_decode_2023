@@ -14,7 +14,7 @@ class TaskCreateSerializer(serializers.ModelSerializer):
         fields = ('title', 'description', 'deadline')
 
 
-class TaskDetail(serializers.ModelSerializer):
+class TaskDetailSerializer(serializers.ModelSerializer):
     class Meta:
         model = Task
         fields = '__all__'
